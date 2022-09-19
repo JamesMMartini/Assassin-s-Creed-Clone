@@ -356,8 +356,6 @@ namespace StarterAssets
                     !Physics.Raycast(LedgeClimbTarget.transform.position, LedgeClimbTarget.transform.forward, out ledgeRay, 1f) && 
                     Physics.Raycast(WallRideTarget.transform.position, WallRideTarget.transform.forward, out wallRay, 1f))
                 {
-                    Debug.Log("CLIMBING");
-
                     // the square root of H * -2 * G = how much velocity needed to reach desired height
                     _verticalVelocity = Mathf.Sqrt(JumpHeight * -1.25f * Gravity);
 
